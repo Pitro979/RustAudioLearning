@@ -1,2 +1,2 @@
 # RustAudioLearning
-Reapo for simple Rust projects regarding audio.
+Repo for simple Rust projects regarding audio.
