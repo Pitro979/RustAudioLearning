@@ -20,7 +20,7 @@ pub struct URIDs{
     unit: UnitURIDCollection,
 }
 
-#[uri("https://github.com/Pitro979/RustAudioLearning/tree/main/lv2/gate")]
+#[uri("https://github.com/Pitro979/RustAudioLearning/lv2/gate")]
 pub struct Gate{
     n_active_notes: u64,
     program: u8,
@@ -102,7 +102,7 @@ impl Plugin for Gate{
         }
         self.write_output(ports,offset,ports.input.len() - offset);
     }
-    
+
     fn activate(&mut self, _features: &mut Features<'static>) {
         self.n_active_notes=0;
         self.program=0;
